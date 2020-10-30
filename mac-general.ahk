@@ -88,7 +88,7 @@ $!+Up::Send {Ctrl Down}{shift down}{Home}{shift up}{Ctrl Up}
 $!+Down::Send {Ctrl Down}{shift down}{End}{shift up}{Ctrl Up}
 
 ; Cmd+Backspace: Delete until the beginning of the line
-!BS::Send {LShift down}{Home}{LShift Up}{Del}
+$!Backspace::Send {LShift down}{Home}{LShift Up}{Backspace}
 
 ; Option+Backspace: Delete one word
-#BS::Send {LCtrl down}{BS}{LCtrl up}
+$#Backspace::Send {LCtrl down}{Backspace}{LCtrl up}
