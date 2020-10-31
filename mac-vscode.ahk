@@ -1,10 +1,10 @@
 #If WinActive("ahk_exe Code.exe") ; only in vscode
 
 ; Option+Up: Move current line up
-$#Up::Send !{up}
+$#Up::Send !{Up}
 
 ; Option+Down: Move current line down
-$#Down::Send !{down}
+$#Down::Send !{Down}
 
 ; Cmd+]: Indent current line or selection
 $!SC01B::Send ^{SC01B}
@@ -17,5 +17,8 @@ $!SC035::Send ^{SC035}
 
 ; Option+Q: Rewrap
 $#q::Send !q
+
+; Cmd+P: Search
+$!p::Send ^p
 
 #If ; turn off context sensitivity

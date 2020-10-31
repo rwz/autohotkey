@@ -29,13 +29,13 @@ $!f::Send ^f
 $!n::Send ^n
 
 ; Cmd+Q: quite current application
-$!q::Send !{f4}
+$!q::Send !{F4}
 
 ; Cmd+R: refresh page
-$!r::Send ^{f5}
+$!r::Send ^{F5}
 
 ; Cmd+M: minimize current window
-$!m::Send {LWin Down}{Down}{LWin Up}
+$!m::Send #{Down}
 
 ; Quick Switch Tab shotcuts
 $!1::Send ^1
@@ -52,43 +52,46 @@ $!0::Send ^0
 ; Navigation, text editing, etc...
 
 ; Cmd-Left: Home
-$!Left::Send {home}
+$!Left::Send {Home}
 
 ; Cmd-Right: End
-$!Right::Send {end}
+$!Right::Send {End}
 
 ; Cmd+Up: Beginning of the doc
-$!Up::Send ^{home}
+$!Up::Send ^{Home}
 
 ; Cmd+Down: End of the doc
-$!Down::Send ^{end}
+$!Down::Send ^{End}
 
 ; Option+Left: one word left
-$#Left::Send ^{left}
+$#Left::Send ^{Left}
 
 ; Option+Right: one word right
-$#Right::Send ^{right}
+$#Right::Send ^{Right}
 
 ; Shift+Option+Left: select one word to the left
-$#+Left::Send ^+{left}
+$#+Left::Send ^+{Left}
 
 ; Shift+Option+Right: select one word to the right
-$#+Right::Send ^+{right}
+$#+Right::Send ^+{Right}
 
 ; Cmd+Shift+Left: select until the beginning of the line
-$!+Left::Send +{home}
+$!+Left::Send +{Home}
 
 ; Cmd+Shift+Right: select until the end of the line
-$!+Right::Send +{end}
+$!+Right::Send +{End}
 
 ; Cmd+Shift+Up: Select until the beginning of the document
-$!+Up::Send ^+{home}
+$!+Up::Send ^+{Home}
 
 ; Cmd+Shift+Down: Select until the end of the document
-$!+Down::Send ^+{end}
+$!+Down::Send ^+{End}
 
 ; Cmd+Backspace: Delete until the beginning of the line
-$!Backspace::Send {lshift down}{home}{lshift up}{backspace}
+$!Backspace::Send +{Home}{Backspace}
 
 ; Option+Backspace: Delete one word
-$#Backspace::Send ^{backspace}
+$#Backspace::Send ^{Backspace}
+
+; Cmd+H: Hide window
+$!h::WinMinimize, A
