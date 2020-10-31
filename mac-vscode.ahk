@@ -7,9 +7,15 @@ $#Up::Send {LAlt down}{Up}{LAlt up}
 $#Down::Send {LAlt down}{Down}{LAlt up}
 
 ; Cmd+]: Indent current line or selection
-$!]::Send {LCtrl down}{]}{LCtrl up}
+$!SC01B::Send {LCtrl down}{SC01B}{LCtrl up}
 
 ; Cmd+[: De-intent current line or selection
-$![::Send {LCtrl down}{[}{LCtrl up}
+$!SC01A::Send {LCtrl down}{SC01A}{LCtrl up}
+
+; Cmd+/: Comment/uncomment current line or selection
+$!SC035::Send {LCtrl down}{SC035}{LCtrl up}
+
+; Option+Q: Rewrap
+$#q::Send {LAlt down}{q}{LAlt up}
 
 #If ; turn off context sensitivity

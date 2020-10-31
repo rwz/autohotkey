@@ -7,10 +7,10 @@ $!t::Send ^t
 $!+t::Send ^+t
 
 ; Cmd+Shift+]: next tab
-$!+]::Send {Ctrl Down}{Tab Down}{Tab Up}{Ctrl Up}
+$!+SC01B::Send {Ctrl Down}{Tab Down}{Tab Up}{Ctrl Up}
 
 ; Cmd+Shift+[: previous tab
-$!+[::Send {Ctrl Down}{Shift Down}{Tab Down}{Tab Up}{Shift Up}{Ctrl Up}
+$!+SC01A::Send {Ctrl Down}{Shift Down}{Tab Down}{Tab Up}{Shift Up}{Ctrl Up}
 
 ; Cmd+L
 $!l::Send ^l

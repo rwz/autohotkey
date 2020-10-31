@@ -1,5 +1,5 @@
 ; Cmd+~: Cycle through windows of a currently active app
-$!`::
+$!SC029::
 ; Getting the path of a current active window
 WinGet, processPath, ProcessPath, A
 ; Getting ids of windows of a process with the same path
