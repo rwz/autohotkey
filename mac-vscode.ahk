@@ -11,3 +11,5 @@ $!]::Send {LCtrl down}{]}{LCtrl up}
 
 ; Cmd+[: De-intent current line or selection
 $![::Send {LCtrl down}{[}{LCtrl up}
+
+#If ; turn off context sensitivity
