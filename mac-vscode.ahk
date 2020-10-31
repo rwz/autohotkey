@@ -1,21 +1,21 @@
 #If WinActive("ahk_exe Code.exe") ; only in vscode
 
 ; Option+Up: Move current line up
-$#Up::Send {LAlt down}{Up}{LAlt up}
+$#Up::Send !{up}
 
 ; Option+Down: Move current line down
-$#Down::Send {LAlt down}{Down}{LAlt up}
+$#Down::Send !{down}
 
 ; Cmd+]: Indent current line or selection
-$!SC01B::Send {LCtrl down}{SC01B}{LCtrl up}
+$!SC01B::Send ^{SC01B}
 
 ; Cmd+[: De-intent current line or selection
-$!SC01A::Send {LCtrl down}{SC01A}{LCtrl up}
+$!SC01A::Send ^{SC01A}
 
 ; Cmd+/: Comment/uncomment current line or selection
-$!SC035::Send {LCtrl down}{SC035}{LCtrl up}
+$!SC035::Send ^{SC035}
 
 ; Option+Q: Rewrap
-$#q::Send {LAlt down}{q}{LAlt up}
+$#q::Send !q
 
 #If ; turn off context sensitivity

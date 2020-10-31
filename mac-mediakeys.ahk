@@ -1,6 +1,6 @@
-$F7::Send {Media_Prev}
-$F8::Send {Media_Play_Pause}
-$F9::Send {Media_Next}
-$F10::Send {Volume_Mute}
-$F11::Send {Volume_Down}
-$F12::Send {Volume_Up}
+$F7::Send {media_prev}
+$F8::Send {media_play_pause}
+$F9::Send {media_next}
+$F10::Send {volume_mute}
+$F11::Send {volume_down}
+$F12::Send {volume_up}

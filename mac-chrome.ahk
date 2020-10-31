@@ -1,4 +1,4 @@
-; Chrome shotcuts
+#If WinActive("ahk_exe chrome.exe") ; only in chrome
 
 ; Cmd+T: new browser tab
 $!t::Send ^t
@@ -7,10 +7,15 @@ $!t::Send ^t
 $!+t::Send ^+t
 
 ; Cmd+Shift+]: next tab
-$!+SC01B::Send {Ctrl Down}{Tab Down}{Tab Up}{Ctrl Up}
+$!+SC01B::Send ^{tab}
 
 ; Cmd+Shift+[: previous tab
-$!+SC01A::Send {Ctrl Down}{Shift Down}{Tab Down}{Tab Up}{Shift Up}{Ctrl Up}
+$!+SC01A::Send ^+{tab}
+
+; Cmd+Shift+N: new incognito window
+$!+n::Send ^+n
 
 ; Cmd+L
 $!l::Send ^l
+
+#If ; turn off context sensitivity

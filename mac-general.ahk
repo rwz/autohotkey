@@ -52,43 +52,43 @@ $!0::Send ^0
 ; Navigation, text editing, etc...
 
 ; Cmd-Left: Home
-$!Left::Send {Home}
+$!Left::Send {home}
 
 ; Cmd-Right: End
-$!Right::Send {End}
+$!Right::Send {end}
 
 ; Cmd+Up: Beginning of the doc
-$!Up::Send {Lctrl down}{Home}{Lctrl up}
+$!Up::Send ^{home}
 
 ; Cmd+Down: End of the doc
-$!Down::Send {Lctrl down}{End}{Lctrl up}
+$!Down::Send ^{end}
 
 ; Option+Left: one word left
-$#Left::Send {ctrl down}{Left}{ctrl up}
+$#Left::Send ^{left}
 
 ; Option+Right: one word right
-$#Right::Send {ctrl down}{Right}{ctrl up}
+$#Right::Send ^{right}
 
 ; Shift+Option+Left: select one word to the left
-$#+Left::Send {ctrl down}{shift down}{Left}{shift up}{ctrl up}
+$#+Left::Send ^+{left}
 
 ; Shift+Option+Right: select one word to the right
-$#+Right::Send {ctrl down}{shift down}{Right}{shift up}{ctrl up}
+$#+Right::Send ^+{right}
 
 ; Cmd+Shift+Left: select until the beginning of the line
-$!+Left::Send {shift down}{Home}{shift up}
+$!+Left::Send +{home}
 
 ; Cmd+Shift+Right: select until the end of the line
-$!+Right::Send {shift down}{End}{shift up}
+$!+Right::Send +{end}
 
 ; Cmd+Shift+Up: Select until the beginning of the document
-$!+Up::Send {Ctrl Down}{shift down}{Home}{shift up}{Ctrl Up}
+$!+Up::Send ^+{home}
 
 ; Cmd+Shift+Down: Select until the end of the document
-$!+Down::Send {Ctrl Down}{shift down}{End}{shift up}{Ctrl Up}
+$!+Down::Send ^+{end}
 
 ; Cmd+Backspace: Delete until the beginning of the line
-$!Backspace::Send {LShift down}{Home}{LShift Up}{Backspace}
+$!Backspace::Send {lshift down}{home}{lshift up}{backspace}
 
 ; Option+Backspace: Delete one word
-$#Backspace::Send {LCtrl down}{Backspace}{LCtrl up}
+$#Backspace::Send ^{backspace}
