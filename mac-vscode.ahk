@@ -21,4 +21,29 @@ $#q::Send !q
 ; Cmd+P: Search
 $!p::Send ^p
 
+; Cmd+Shift+P: Command Pallette
+$!+p::Send ^+p
+
+; Cmd++: Increase font
+$!+::Send ^+
+
+; Cmd+-: Decrease font
+$!-::Send ^-
+
+; Ctrl+-: Back
+$^-::Send !{Left}
+
+; Ctrl+_: Forward
+$^+-::Send !{Right}
+
+; Cmd-K Cmd-Q: Last edit location
+$!k::Send ^k
+$!q::Send ^q
+
+; Alt+C: Markdown: mark current line TODO as complete
+$#C::Send !c
+
+; Cmd+Mouse1: General navigation
+$!LButton::Send ^{LButton}
+
 #If ; turn off context sensitivity
