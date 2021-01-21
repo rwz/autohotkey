@@ -16,7 +16,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 ; General Mac shortcuts
 #Include mac-general.ahk
 
-; Cmd+Space: switch imput method
+; Cmd+Space: switch input method
 #Include mac-input-method.ahk
 
 ; Mac-like en dash & em dash
