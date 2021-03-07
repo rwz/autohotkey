@@ -31,5 +31,8 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 ; Mac-like Edge shortcuts
 #Include mac-edge.ahk
 
+; Mac-like Firefox shortcuts
+#Include mac-firefox.ahk
+
 ; Mac-like media keys
 #Include mac-mediakeys.ahk
