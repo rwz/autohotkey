@@ -36,3 +36,7 @@ SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 ; Mac-like media keys
 #Include mac-mediakeys.ahk
+
+; Disable some of Windows bullshit hotkeys that are enabled by default and can't
+; be disabled otherwise cause Windows is stupid
+#Include win-bullshit.ahk
