@@ -1,7 +1,4 @@
-; Apex Legends
-#If WinActive("ahk_class Respawn001")
-
+#If WinActive("ahk_exe r5apex.exe") ; Apex Legends
 ; Win key should not work at all
-#::return
-
-#If ; turn off Apex Legends context
+LWin::return
+#If ;

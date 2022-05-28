@@ -5,41 +5,40 @@
 #Warn ; Enable warnings to assist with detecting common errors.
 #NoTrayIcon
 ; #InstallKeybdHook
-#SingleInstance force
+#SingleInstance force ;  This ensures every time the script is called it stops any previous instance and start a new one.
 AutoTrim OFF
 SendMode Input ; Recommended for new scripts due to its superior speed and reliability.
-SetWorkingDir %A_ScriptDir% ; Ensures a consistent starting directory.
 
 ; Cmd+~: Cycle windows of current active app
-#Include cycle-windows.ahk
+#Include %A_LineFile%\..\cycle-windows.ahk
 
 ; General Mac shortcuts
-#Include mac-general.ahk
+#Include %A_LineFile%\..\mac-general.ahk
 
 ; Cmd+Space: switch input method
-#Include mac-input-method.ahk
+#Include %A_LineFile%\..\mac-input-method.ahk
 
 ; Mac-like en dash & em dash
-#Include mac-dashes.ahk
+#Include %A_LineFile%\..\mac-dashes.ahk
 
 ; Some VSCode goodness
-#Include mac-vscode.ahk
+#Include %A_LineFile%\..\mac-vscode.ahk
 
 ; Mac Chrome shortcuts
-#Include mac-chrome.ahk
+#Include %A_LineFile%\..\mac-chrome.ahk
 
 ; Mac-like Edge shortcuts
-#Include mac-edge.ahk
+#Include %A_LineFile%\..\mac-edge.ahk
 
 ; Mac-like Firefox shortcuts
-#Include mac-firefox.ahk
+#Include %A_LineFile%\..\mac-firefox.ahk
 
 ; Mac-like media keys
-#Include mac-mediakeys.ahk
+#Include %A_LineFile%\..\mac-mediakeys.ahk
 
 ; Disable some of Windows bullshit hotkeys that are enabled by default and can't
 ; be disabled otherwise cause Windows is stupid
-#Include win-bullshit.ahk
+#Include %A_LineFile%\..\win-bullshit.ahk
 
 ; Videogames
-#Include win-games.ahk
+#Include %A_LineFile%\..\win-games.ahk

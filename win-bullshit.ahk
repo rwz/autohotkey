@@ -3,4 +3,5 @@
 
 ; Disable switch desktop functionality
 #^Left::return
+
 #^Right::return
